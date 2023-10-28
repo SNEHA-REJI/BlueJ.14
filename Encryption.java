@@ -14,7 +14,7 @@ FileOutputStream fout=new FileOutputStream("encrypt.txt");
 while((i=fin.read())!=-1)
 {
    c=(char)i;
-   if(c==' ')
+   if(c==' ' || c=='\n')
    fout.write(c);
    else if((c>='a' && c<=('z'-((char)en))) || (c>='A' && c<=('Z'-((char)en))))
    {
