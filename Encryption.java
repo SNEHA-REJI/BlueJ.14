@@ -22,7 +22,7 @@ while((i=fin.read())!=-1)
    c=(char)i;
    fout.write(c);
    }
-   else if((c>=('z'-((char)en))) && c<='z' || (c>=('Z'-((char)en))) && c<='Z')
+   else if((c>('z'-((char)en))) && c<='z' || (c>('Z'-((char)en))) && c<='Z')
    {
    i=i-(26-en);
    c=(char)i;
